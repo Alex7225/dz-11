@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Use tests automation" parallel="methods" thread-count="5">
+
+    <groups>
+        <run>
+            <include name="GettersTest"/>
+        </run>
+    </groups>
+    <test name="Operations smoke">
+        <classes>
+            <class name="TestWoman"/>
+            <class name="TestMan"/>
+        </classes>
+    </test>
+</suite>
