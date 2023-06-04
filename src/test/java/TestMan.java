@@ -13,19 +13,19 @@ public class TestMan {
         husban = new Man("Ivan", "Mukolaichyk", 29, true);
         wife.registerPartner(husban);
     }
-    @Test (groups = {"All"})
+    @Test
     public void testHusbenRetired() {
         Assert.assertFalse(husban.isRetired(), "Pensioner, maybe");
     }
-    @Test (groups = {"All"})
+    @Test
     public void testHusbenSurname() {
         Assert.assertEquals(husban.getLastName(), "Mukolaichyk", "No surname, maybe didn't store");
     }
-    @Test(groups = {"GettersTest", "All"})
+    @Test(groups = {"GettersTest"})
     public void testHusbenName() {
         Assert.assertEquals(husban.getFirstName(), "Ivan", "No name, maybe didn't store");
     }
-    @Test(groups = {"GettersTest", "All"})
+    @Test(groups = {"GettersTest"})
     public void testHusbenAge() {
         Assert.assertEquals(husban.getAge(), 29, "Wrong age, maybe didn't store");
     }
